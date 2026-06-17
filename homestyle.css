@@ -84,6 +84,7 @@ body {
     margin: 0 0 200px 0;
 
     user-select: none;
+    overflow: hidden;
 }
 
 .background-graphics {
@@ -293,7 +294,6 @@ body {
     justify-content: space-between;
     gap: calc((60 / 1728) * 100vw);
     padding: 100px;
-    max-width: 1527px;
     margin: 0 0 200px 0;
 
     pointer-events: none;
@@ -557,13 +557,13 @@ body {
     transform: translateY(clamp(-105px, calc(var(--scroll-progress, 0) * 300px), 150px));
 }
 .hand-left {
-    transform: translateY(calc(var(--scroll-progress, 0) * 200px));
+    transform: translateY(clamp(-105px, calc(var(--scroll-progress, 0) * 300px), 150px));
 }
 .hand-right {
-    transform: translateY(calc(var(--scroll-progress, 0) * 150px));
+    transform: translateY((clamp(-105px, calc(var(--scroll-progress, 0) * 300px), 150px));
 }
 .bg-large-logo {
-    transform: translateY(calc(var(--scroll-progress, 0) * 250px));
+    transform: translateY((clamp(-105px, calc(var(--scroll-progress, 0) * 300px), 150px));
 }
     
 
@@ -688,8 +688,7 @@ body {
 
     /* 텍스트 크기 일괄 축소 */
     .profile-title {
-        font-size: 38px;
-        margin-bottom: 15px;
+        font-size: 35px;
     }
 
     .bracket {
@@ -738,19 +737,19 @@ body {
         rotate: -5deg;
     }
     
-        .content-box {
-        bottom: 8%;
+    .content-box {
+        bottom: 0%;
         left: 40px;
         right: 40px;
     }
 
-        .bg-large-logo {
+     .bg-large-logo {
         width: 55%;
         top: 70%;
         right: -3%;
     }
 
-    
+
     
     .profile-container {
         padding: 40px 24px;
@@ -759,12 +758,11 @@ body {
 
     
     .profile-title {
-        font-size: 28px;
+        font-size: 25px;
     }
 
     .roulette-wrapper {
         gap: 15px;
-        margin-bottom: 20px;
     }
 
     .bracket {
@@ -782,8 +780,8 @@ body {
     }
 
     .profile-description {
-        font-size: 14px;
-        line-height: 1.8;
+        font-size: 11px;
+        line-height: 1.5;
     }
 
     .profile-img {
