@@ -663,62 +663,6 @@ body {
         top: 75%;
         right: -3%;
     }
-
-    
-
-    .profile-container {
-        padding: 60px 40px;
-        margin: 0 0 100px 0;
-        min-height: auto;
-        flex-direction: column;
-        justify-content: flex-start;
-        gap: 60px;
-    }
-
-    .profile-content,
-    .profile-shadow,
-    .profile-img {
-        position: relative;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: 100%;
-        max-width: 100%;
-    }
-
-    /* 텍스트 크기 일괄 축소 */
-    .profile-title {
-        font-size: 35px;
-    }
-
-    .bracket {
-        font-size: 64px;
-    }
-
-    .roulette-window {
-        height: 70px;
-        min-width: 280px;
-    }
-
-    .roulette-item {
-        font-size: 64px;
-        height: 70px;
-    }
-
-    .profile-description {
-        font-size: 15px;
-        max-width: 100%;
-    }
-
-    /* 이미지와 그림자가 따로 놀지 않도록 컨테이너 정리 */
-    .profile-img {
-        max-width: 400px !important;
-        margin: 0 auto;
-    }
-    
-    .profile-shadow {
-        display: none; /* 모바일/태블릿에서 위치 꼬이는 유령 그림자는 숨기는 걸 추천합니다 */
-    }
 }
 
 
@@ -748,44 +692,4 @@ body {
         top: 70%;
         right: -3%;
     }
-
-
-    
-    .profile-container {
-        padding: 40px 24px;
-        gap: 40px;
-    }
-
-    
-    .profile-title {
-        font-size: 25px;
-    }
-
-    .roulette-wrapper {
-        gap: 15px;
-    }
-
-    .bracket {
-        font-size: 40px;
-    }
-
-    .roulette-window {
-        height: 45px;
-        min-width: 200px;
-    }
-
-    .roulette-item {
-        font-size: 40px;
-        height: 45px;
-    }
-
-    .profile-description {
-        font-size: 11px;
-        line-height: 1.5;
-    }
-
-    .profile-img {
-        max-width: 280px !important;
-    }
 }
-
