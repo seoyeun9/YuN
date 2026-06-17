@@ -3,7 +3,7 @@ html {
 }
 
 
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -53,8 +53,6 @@ body {
 .nav-item {
     text-decoration: none;
     color: #1A2223;
-
-    mix-blend-mode: difference;
     
     font-family: "abhaya-libre", sans-serif;
     font-weight: 700;
@@ -140,16 +138,16 @@ body {
 }
 
 .main-title {    
-    font-size: calc((25 / 1728) * 100vw);   
+    font-size: clamp(14px, calc((25 / 1728) * 100vw), 25px);
     font-weight: 500;
     font-style: normal;
     color: #566365;
     
-    margin: 0 0 calc((30 / 1080) * 100vh) 0;
+    margin: 0 0 calc((20 / 1080) * 100vh) 0;
 }
 
 .sub-description {
-    font-size: calc((16 / 1728) * 100vw);   
+    font-size: clamp(12px, calc((16 / 1728) * 100vw), 16px);   
     font-weight: 100;
     font-style: normal;
     line-height: 2;
@@ -556,7 +554,7 @@ body {
     transform: translateY(clamp(-105px, calc(var(--scroll-progress, 0) * 300px), 150px));
 }
 .hand-left {
-    transform: translateY(clamp(-105px, calc(var(--scroll-progress, 0) * 300px), 150px));
+    transform: translateY(clamp(50px, calc(var(--scroll-progress, 0) * 300px), 150px));
 }
 .hand-right {
     transform: translateY((clamp(-105px, calc(var(--scroll-progress, 0) * 300px), 150px));
