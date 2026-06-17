@@ -614,7 +614,6 @@ body {
         font-size: 16px;
     }
 
-
     .hero-container {
         height: calc((1080 / 1728) * 100vw);
         min-height: 40vh;
@@ -626,19 +625,18 @@ body {
 
     .hand-left {
         width: 60%;
-        top: 50%;
+        top: 15%;
         left: -10%;
         rotate: -2deg;
     }
 
     .hand-right {
         width: 60%;
-        top: 30%;
+        top: 40%;
         right: -12%;
-        rotate: -6deg;
+        rotate: -5deg;
     }
     
-
     .content-box {
         bottom: 0%;
         left: 45px;
@@ -659,5 +657,60 @@ body {
         width: 55%;
         top: 75%;
         right: -3%;
+    }
+
+    
+    .profile-container {
+        padding: 60px 40px;
+        margin: 0 0 100px 0;
+        min-height: auto;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 60px;
+    }
+
+    .profile-content {
+        position: relative;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .profile-title {
+        font-size: 38px;
+        margin-bottom: 15px;
+    }
+
+    .bracket {
+        font-size: 64px;
+    }
+
+    .roulette-window {
+        height: 70px;
+        min-width: 280px;
+    }
+
+    .roulette-item {
+        font-size: 64px;
+        height: 70px;
+    }
+
+    .profile-description {
+        font-size: 15px;
+        max-width: 100%;
+    }
+
+    .profile-img {
+        width: 60%;
+        top: 15%;
+        left: -10%;
+    }
+    
+    .profile-shadow {
+        width: 60%;
+        top: 15%;
+        left: -10%;
     }
 }
