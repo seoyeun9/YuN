@@ -151,7 +151,7 @@ body {
         
             display: flex;
             justify-content: space-between;
-            gap: calc((195 / 1728) * 100vw);
+            gap: calc((200 / 1728) * 100vw);
         
             width: 100%;
             min-height: 100vh;
@@ -172,7 +172,7 @@ body {
         
         .category-list {
             position: fixed;
-            top: calc((515 / 1728) * 100vw);
+            top: 40%;
             
             list-style: none;
             padding: 0;
@@ -226,7 +226,6 @@ body {
         .work-card-container {
             position: relative;
             
-            width: calc((1362 / 1728) * 100vw);
             height: auto;
             box-sizing: border-box;
         
