@@ -1,4 +1,4 @@
-const sections = document.querySelectorAll('.work-container'); 
+const sections = document.querySelectorAll('.brand-section, .visual-section, .digital-section'); 
 
 const categoryItems = {
     'brand-section': document.querySelector('.category-sidebar .category-item:nth-child(1)'),
