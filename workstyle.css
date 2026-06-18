@@ -165,7 +165,9 @@ body {
     /* 좌측 카테고리 */
         .category-sidebar {
             box-sizing: border-box;            
-            user-select: none;  
+            user-select: none;
+
+            height: fit-content;
         }
         
         .category-list {
