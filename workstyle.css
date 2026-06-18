@@ -146,6 +146,7 @@ body {
         
             display: flex;
             justify-content: center;
+            gap: calc((100 / 1728) * 100vw);
         
             width: 100%;
             min-height: 100vh;
@@ -163,6 +164,9 @@ body {
         }
         
         .category-list {
+            position: sticky;
+            top: 1%;
+            
             list-style: none;
             padding: 0;
             display: flex;
@@ -171,7 +175,7 @@ body {
             margin: 0;
         }
         
-        .category-item a {
+        .category-item {
             text-decoration: none;
         
             display: grid;
@@ -206,7 +210,7 @@ body {
             text-align: right;
         }
         
-        .category-item.active a {
+        .category-item.is-active {
             opacity: 1;
         }
     
