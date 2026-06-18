@@ -89,7 +89,8 @@ body {
         animation: headerFadeInDown 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
         animation-delay: 1s;
     }
-    
+
+
     @keyframes headerFadeInDown {
         from {
             opacity: 0;
@@ -236,7 +237,7 @@ body {
         
         /* 브랜드 섹션*/
             .brand-section {
-                scroll-margin-top: 150px;
+                scroll-margin-top: 250px;
                 
                 height: auto;
                 margin: 0 0 400px 0;
@@ -455,7 +456,7 @@ body {
 
         /* 비쥬얼 섹션*/
             .visual-section {
-                scroll-margin-top: 150px;
+                scroll-margin-top: 250px;
                 
                 height: auto;
                 margin: 0 0 200px 0;
@@ -478,7 +479,7 @@ body {
 
         /* 디지털 섹션*/
             .digital-section {
-                scroll-margin-top: 150px;
+                scroll-margin-top: 250px;
                 
                 height: auto;
                 margin: 200px 0 100px 0;
