@@ -141,18 +141,19 @@ body {
 
 /* 하단 메인 화면 */
     .work-container {
-        position: relative;
-        display: flex;
-        gap: 0 calc((100 / 1728) * 100vw);
+            position: relative;
+            box-sizing: border-box;
         
-        width: 100%;
-        min-height: 100vh;
-        box-sizing: border-box;
-        padding: 100px;
-        margin: 0 0 200px 0;
+            display: flex;
+            justify-content: center;
         
-        user-select: none;
-        overflow: hidden;
+            width: 100%;
+            min-height: 100vh;
+            padding: 100px;
+            margin: 0 0 200px 0;
+        
+            user-select: none;
+            overflow: hidden;
     }
     
     /* 좌측 카테고리 */
@@ -331,8 +332,7 @@ body {
                 .content-row {
                     display: flex;
                     flex-direction: row;
-
-                    gap: calc((50 / 1728) * 100vw);
+                    justify-content: space-between;
                 }
                 
                 .content-media {
@@ -399,7 +399,7 @@ body {
                 .content-tags {
                     position: absolute;
                     bottom: calc((25 / 1728) * 100vw);
-                    left: 30px;
+                    left: calc((30 / 1728) * 100vw);
                     z-index: 2;
                     
                     display: flex;
@@ -516,7 +516,7 @@ body {
                 .wide-content-tags {
                     position: absolute;
                     bottom: calc((25 / 1728) * 100vw);
-                    left: 30px;
+                    left: calc((30 / 1728) * 100vw);
                     z-index: 2;
                     
                     display: flex;
