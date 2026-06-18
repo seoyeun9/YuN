@@ -576,7 +576,6 @@ body {
 .footer-section {
     width: 100%;
     background-color: #FCFFFF;
-    padding: calc((200 / 1728) * 100vw) 0 0 0;
 
     overflow: hidden; 
     position: relative;
