@@ -1,10 +1,6 @@
-const sections = document.querySelectorAll('.brand-section, .visual-section, .digital-section'); 
+const sections = document.querySelectorAll('#brand-section, #visual-section, #digital-section'); 
 
-const categoryItems = {
-    'brand-section': document.querySelector('.category-list .category-item:nth-child(1)'),
-    'visual-section': document.querySelector('.category-list .category-item:nth-child(2)'),
-    'digital-section': document.querySelector('.category-list .category-item:nth-child(3)')
-};
+const categoryItems = document.querySelectorAll('.category-list .category-item');
 
 const observerOptions = {
     root: null,
@@ -15,16 +11,15 @@ const observerOptions = {
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            const sectionKey = entry.target.id || entry.target.classList[0];
+            const sectionId = entry.target.id; // 이제 id를 확실하게 가져옵니다.
             
-            // 1. 모든 li 요소에서 'active' 클래스 제거
-            Object.values(categoryItems).forEach(item => {
-                if (item) item.classList.remove('active');
-            });
+            // 1. 모든 카테고리 아이템에서 active 제거
+            categoryItems.forEach(item => item.classList.remove('active'));
             
-            // 2. 현재 활성화된 섹션의 li 요소에 'active' 클래스 추가
-            if (categoryItems[sectionKey]) {
-                categoryItems[sectionKey].classList.add('active');
+            // 2. data-target 값이 현재 id와 일치하는 li 요소를 찾아 active 추가
+            const targetMenuItem = document.querySelector(`.category-list .category-item[data-target="${sectionId}"]`);
+            if (targetMenuItem) {
+                targetMenuItem.classList.add('active');
             }
         }
     });
