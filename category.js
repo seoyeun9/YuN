@@ -1,9 +1,9 @@
 const sections = document.querySelectorAll('.brand-section, .visual-section, .digital-section'); 
 
 const categoryItems = {
-    'brand-section': document.querySelector('.category-sidebar .category-item:nth-child(1)'),
-    'visual-section': document.querySelector('.category-sidebar .category-item:nth-child(2)'),
-    'digital-section': document.querySelector('.category-sidebar .category-item:nth-child(3)')
+    'brand-section': document.querySelector('.category-list .category-item:nth-child(1)'),
+    'visual-section': document.querySelector('.category-list .category-item:nth-child(2)'),
+    'digital-section': document.querySelector('.category-list .category-item:nth-child(3)')
 };
 
 
