@@ -150,8 +150,8 @@ body {
             box-sizing: border-box;
         
             display: flex;
-            justify-content: center;
-            gap: calc((100 / 1728) * 100vw);
+            justify-content: space-between;
+            gap: calc((195 / 1728) * 100vw);
         
             width: 100%;
             min-height: 100vh;
@@ -171,8 +171,8 @@ body {
         }
         
         .category-list {
-            position: sticky;
-            top: 1%;
+            position: fixed;
+            top: calc((515 / 1728) * 100vw);
             
             list-style: none;
             padding: 0;
