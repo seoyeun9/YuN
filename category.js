@@ -1,6 +1,6 @@
 const sections = document.querySelectorAll('#brand-section, #visual-section, #digital-section'); 
 
-const categoryItems = document.querySelectorAll('.category-list .category-item');
+const categoryItems = document.querySelectorAll('.category-sidebar .category-item');
 
 const observerOptions = {
     root: null,
