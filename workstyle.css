@@ -179,7 +179,7 @@ body {
             margin: 0;
         }
         
-        .category-item a.{
+        .category-item.{
             text-decoration: none;
         
             display: grid;
@@ -214,7 +214,7 @@ body {
             text-align: right;
         }
         
-        .category-item a.is-active {
+        .category-item.is-active {
             opacity: 1;
         }
     
