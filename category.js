@@ -6,31 +6,25 @@ const categoryItems = {
     'digital-section': document.querySelector('.category-list .category-item:nth-child(3)')
 };
 
-
-
 const observerOptions = {
     root: null,
-  
-    rootMargin: '0px 0px -100% 0px', 
+    rootMargin: '-20% 0px -60% 0px', // 스크롤 시 부드럽게 감지되도록 유지
     threshold: 0
 };
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-
         if (entry.isIntersecting) {
-            const sectionId = entry.target.id;
+            const sectionKey = entry.target.id || entry.target.classList[0];
             
+            // 1. 모든 li 요소에서 'active' 클래스 제거
             Object.values(categoryItems).forEach(item => {
-                if (item) {
-                    const link = item.querySelector('a');
-                    if (link) link.classList.remove('is-active');
-                }
+                if (item) item.classList.remove('active');
             });
             
-            if (categoryItems[sectionId]) {
-                const activeLink = categoryItems[sectionId].querySelector('a');
-                if (activeLink) activeLink.classList.add('is-active');
+            // 2. 현재 활성화된 섹션의 li 요소에 'active' 클래스 추가
+            if (categoryItems[sectionKey]) {
+                categoryItems[sectionKey].classList.add('active');
             }
         }
     });
