@@ -251,21 +251,13 @@ body {
                 background-color: #FFFDFB;
             }
 
-            .application-row1 {
+            .application-row {
                 box-sizing: border-box;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 justify-content: space-between;
-            }                  
-
-            .application-row2 {
-                box-sizing: border-box;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: space-between;
-            }        
+            }                 
 
                 .744-img {
                         width: calc((744 / 1728) * 100vw);
