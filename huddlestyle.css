@@ -258,13 +258,21 @@ body {
                 align-items: center;
                 justify-content: space-between;
             }                  
-                    .744-img {
+
+            .application-row2 {
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }        
+
+                .744-img {
                         width: calc((744 / 1728) * 100vw);
                         display: block;
 
                         background-color: #FFFDFB;
                     }
-
 
 
 /* 푸더 */
