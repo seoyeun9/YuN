@@ -264,7 +264,7 @@ body {
             }                 
 
                 .narrow-img {
-                        width: calc((690 / 1728) * 100vw);
+                        width: calc((774 / 1728) * 100vw);
                         display: block;
 
                         background-color: #FFFDFB;
