@@ -119,7 +119,7 @@ body {
         width: 100%;
         height: 100%;
         
-        padding: calc((200 / 1728) * 100vw) calc((100 / 1728) * 100vw) 0;
+        padding: calc((200 / 1728) * 100vw) calc((100 / 1728) * 100vw) calc((100 / 1728) * 100vw);
         margin: 100px 0 0 0;
 
         overflow: hidden;
@@ -221,3 +221,155 @@ body {
                   background-color: transparent; /* 배경은 투명하게 */
                   white-space: nowrap;
               }
+
+
+
+/* 갤러리 */
+    .application-container {
+        position: relative;
+      
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        width: 100%;
+        height: 100%;
+        
+        padding: 0 calc((100 / 1728) * 100vw);
+
+        overflow: hidden;
+        user-select: none;
+    }
+        
+        /* 갤러리 이미지들*/
+            .huddle-video {
+                width: calc((1528 / 1728) * 100vw);
+                display: block;
+
+                background-color: #FFFDFB;
+            }
+
+            .logo {
+                width: calc((1528 / 1728) * 100vw);
+                display: block;
+
+                background-color: #FFFDFB;
+                
+            }
+
+            .application-row1 {
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+                .square-content {
+                    width: calc((744 / 1728) * 100vw);
+                    
+                    background-color: #FFFDFB;
+            }
+
+                    .square-img {
+                        width: 100%;
+                        display: block;
+                    }
+
+
+
+/* 푸더 */
+    .footer-section {
+        width: 100%;
+        background-color: #FCFFFF;
+    
+        overflow: hidden; 
+        position: relative;
+    }
+    
+            .footer-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                width: 100%;
+                
+                box-sizing: border-box;
+                padding: calc((410 / 1728) * 100vw) calc((100 / 1728) * 100vw) 0;
+                position: relative;
+            }
+            
+                .footer-left-bg {
+                    flex: 1;
+                    position: relative;
+                    height: calc((514 / 1728) * 100vw);
+                }
+                
+                .logo-bitmap {
+                    position: absolute;
+                    
+                    bottom: calc((-75 / 1728) * 100vw);
+                    left: calc((-185 / 1728) * 100vw);
+                    
+                    width: calc((1195 / 1728) * 100vw);
+                    height: auto;
+                    display: block;
+                }
+                
+                .footer-right-content {
+                    display: flex;
+                    flex-direction: column;
+                    gap: calc((60 / 1728) * 100vw); 
+                }
+                
+                .info-group {
+                    display: flex;
+                    flex-direction: column;
+                    gap: calc((30 / 1728) * 100vw);
+                }
+                
+                .info-label {
+                    font-family: "abhaya-libre", sans-serif;
+                    font-size: calc((24 / 1728) * 100vw);
+                    font-weight: 400;
+                    color: #566365;
+                }
+                
+                .info-value {
+                    font-size: calc((18 / 1728) * 100vw);
+                    font-weight: 400;
+                    color: #1A2223;
+                }
+                
+                .info-link.email-link {
+                    font-size: calc((18 / 1728) * 100vw);
+                    font-weight: 400;
+                    color: #1A2223;
+                    text-decoration: none;
+                    width: max-content;
+                    
+                    border-bottom: 1px solid rgba(26, 34, 35, 1.0);
+                    padding-bottom: 2px;
+                    transition: color 0.3s ease, border-color 0.3s ease;
+                }
+                
+                .info-link.email-link:hover {
+                    color: #566365;
+                    border-bottom: 1px solid rgba(86, 99, 101, 0.4);
+                }
+                
+                .social-links-group {
+                    display: flex;
+                    gap: calc((60 / 1728) * 100vw);
+                }
+                
+                .social-icon-btn {
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                .social-icon-img {
+                    width: calc((45 / 1728) * 100vw);
+                    height: auto;
+            }
