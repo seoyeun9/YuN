@@ -124,7 +124,33 @@ body {
 
         overflow: hidden;
         user-select: none;
-    }
+    }   
+
+              .project-title { 
+                  font-family: "abhaya-libre", sans-serif;
+                  font-size: clamp(52px, calc(100 / 1728) * 100vw), 100px);
+                  font-weight: 700;
+                  font-style: normal;
+                  line-height: 0.9;
+                  
+                  color: #1A2223;
+                    
+                  margin: 0 0 calc((45 / 1080) * 100vh) 0;
+              }
+                
+              .sub-description {
+                  font-size: clamp(11px, calc((15 / 1728) * 100vw), 15px);   
+                  font-weight: 100;
+                  font-style: normal;
+                  line-height: 2;
+                  color: #1A2223;
+
+                  text-align: justify;
+                  text-justify: inter-word;
+
+                  width: calc((857 / 1728) * 100vw);
+                  margin: 0;
+              }
 
         .tag-container {
             display: flex;
@@ -149,8 +175,24 @@ body {
                       
                   color: #1A2223;
               }
+
+                      .category-item .category-text {
+                          grid-column: 2;
+                          text-align: center;
+                          padding: 0 30px;
+                      }
+                    
+                      .category-item .bracket-left {
+                          grid-column: 1;
+                          text-align: left;
+                      }
+                    
+                      .category-item .bracket-right {
+                          grid-column: 3;
+                          text-align: right;
+                      }
           
-              .proejct-tags {
+             .proejct-tags {
                   display: flex;
                   justify-content: flex-start;
                   flex-direction: row;
@@ -178,36 +220,4 @@ body {
                   
                   background-color: transparent; /* 배경은 투명하게 */
                   white-space: nowrap;
-              }
-
-        .content-box {
-            position: absolute;
-            z-index: 2;
-            bottom: calc((150 / 1080) * 100vh);
-            left: calc((100 / 1728) * 100vw);
-        }
-        
-              .project-title { 
-                  font-family: "abhaya-libre", sans-serif;
-                  font-size: clamp(52px, calc(100 / 1728) * 100vw), 100px);
-                  font-weight: 700;
-                  font-style: normal;
-                  line-height: 0.9;
-                  
-                  color: #1A2223;
-                    
-                  margin: 0 0 calc((45 / 1080) * 100vh) 0;
-              }
-                
-              .sub-description {
-                  font-size: clamp(11px, calc((15 / 1728) * 100vw), 15px);   
-                  font-weight: 100;
-                  font-style: normal;
-                  line-height: 2;
-                  color: #1A2223;
-
-                  text-align: justify;
-                  text-justify: inter-word;
-                    
-                  margin: 0;
               }
