@@ -11,6 +11,10 @@ html {
 }
 
 body {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    
     font-family: "ds-endendend", sans-serif;
     color: #333;
     background-color: #FCFFFF;
@@ -237,7 +241,7 @@ body {
         height: 100%;
         
         padding: 0 calc((100 / 1728) * 100vw);
-        gap: calc((100 / 1728) * 100vw);
+        gap: calc((200 / 1728) * 100vw);
 
         overflow: hidden;
         user-select: none;
@@ -260,7 +264,7 @@ body {
             }                 
 
                 .narrow-img {
-                        width: calc((744 / 1728) * 100vw);
+                        width: calc((690 / 1728) * 100vw);
                         display: block;
 
                         background-color: #FFFDFB;
