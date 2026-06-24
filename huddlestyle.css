@@ -244,19 +244,11 @@ body {
     }
         
         /* 갤러리 이미지들*/
-            .huddle-video {
+            .1528-img {
                 width: calc((1528 / 1728) * 100vw);
                 display: block;
 
                 background-color: #FFFDFB;
-            }
-
-            .logo {
-                width: calc((1528 / 1728) * 100vw);
-                display: block;
-
-                background-color: #FFFDFB;
-                
             }
 
             .application-row1 {
@@ -266,7 +258,7 @@ body {
                 align-items: center;
                 justify-content: space-between;
             }                  
-                    .square-img {
+                    .744-img {
                         width: calc((744 / 1728) * 100vw);
                         display: block;
 
