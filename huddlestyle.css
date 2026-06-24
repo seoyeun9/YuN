@@ -244,7 +244,7 @@ body {
     }
         
         /* 갤러리 이미지들*/
-            .1528-img {
+            .wide-img {
                 width: calc((1528 / 1728) * 100vw);
                 display: block;
 
@@ -259,7 +259,7 @@ body {
                 justify-content: space-between;
             }                 
 
-                .744-img {
+                .narrow-img {
                         width: calc((744 / 1728) * 100vw);
                         display: block;
 
