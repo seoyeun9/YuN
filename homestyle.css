@@ -11,6 +11,10 @@ html {
 
 
 body {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    
     font-family: "ds-endendend", sans-serif;
     color: #333;
     background-color: #FCFFFF;
