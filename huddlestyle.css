@@ -237,6 +237,7 @@ body {
         height: 100%;
         
         padding: 0 calc((100 / 1728) * 100vw);
+        gap: calc((100 / 1728) * 100vw);
 
         overflow: hidden;
         user-select: none;
@@ -264,17 +265,12 @@ body {
                 flex-direction: row;
                 align-items: center;
                 justify-content: space-between;
-            }
-
-                .square-content {
-                    width: calc((744 / 1728) * 100vw);
-                    
-                    background-color: #FFFDFB;
-            }
-
+            }                  
                     .square-img {
-                        width: 100%;
+                        width: calc((744 / 1728) * 100vw);
                         display: block;
+
+                        background-color: #FFFDFB;
                     }
 
 
