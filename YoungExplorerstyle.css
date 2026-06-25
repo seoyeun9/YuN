@@ -252,7 +252,7 @@ body {
                 width: calc((1528 / 1728) * 100vw);
                 display: block;
 
-                background-color: #FFFDFB;
+                background-color: #FCFFFF;
             }
 
             .application-row {
@@ -267,7 +267,7 @@ body {
                         width: calc((774 / 1728) * 100vw);
                         display: block;
 
-                        background-color: #FFFDFB;
+                        background-color: #FCFFFF;
                     }
 
 
