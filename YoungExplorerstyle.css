@@ -253,6 +253,9 @@ body {
                 display: block;
 
                 background-color: #FCFFFF;
+
+                z-index: 5;
+                cursor: pointer;
             }
 
             .application-row {
