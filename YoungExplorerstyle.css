@@ -257,6 +257,16 @@ body {
                 z-index: 10;
             }
 
+            .clickable-video::-webkit-media-controls {
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+            
+            .clickable-video:hover::-webkit-media-controls {
+                opacity: 1;
+            }
+
+
             .application-row {
                 box-sizing: border-box;
                 display: flex;
