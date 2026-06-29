@@ -254,7 +254,7 @@ body {
                     flex-direction: row;
                     align-items: center;
                 
-                    gap: calc((100 / 1728) * 100vw);
+                    gap: calc((80 / 1728) * 100vw);
                     margin: 0 0 100px 0;
                 }
 
@@ -348,7 +348,8 @@ body {
                 .content-row {
                     display: flex;
                     flex-direction: row;
-                    justify-content: space-between;
+                    
+                    gap: calc((55 / 1728) * 100vw);
                 }
                 
                 .content-media {
@@ -496,7 +497,6 @@ body {
                     align-items: center;
                 
                     gap: calc((100 / 1728) * 100vw);
-                    margin: 0 0 100px 0;
                 }
 
                 .hero-media {
