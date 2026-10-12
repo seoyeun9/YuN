@@ -200,6 +200,15 @@
                     background-color: #FCFFFF;
                 }
 
+                .clickable-video::-webkit-media-controls {
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                }
+                
+                .clickable-video:hover::-webkit-media-controls {
+                    opacity: 1;
+                }
+        
                 .application-row {
                     box-sizing: border-box;
                     display: flex;
@@ -261,20 +270,20 @@
     
     <main class="application-container">
         
-            <video src="image/work/rhiza.mp4" autoplay loop muted alt="logo" class="wide-img"></video>
+            <video src="image/work/rhiza.mp4" autoplay loop muted alt="Rhiza" class="wide-img"></video>
 
-            <video src="image/work/Rhiza/color.mp4" autoplay loop muted alt="logo" class="wide-img"></video>
+            <video src="image/work/Rhiza/color.mp4" autoplay loop muted alt="color" class="wide-img"></video>
 
             <section id="application-row" class="application-row">
-                <img src="image/work/Rhiza/out.png" alt="receipt" class="out-img">
-                <img src="image/work/Rhiza/rollup.png" alt="receipt" class="ru-img">
+                <img src="image/work/Rhiza/out.png" alt="outdoor_promotion" class="out-img">
+                <img src="image/work/Rhiza/rollup.png" alt="rollup_promotion" class="ru-img">
             </section>
 
-            <video src="image/work/Rhiza/test.mp4" autoplay loop muted alt="logo" class="wide-img"></video>
+            <video src="image/work/Rhiza/test.mp4" alt="Rhiza_TouchDesigner" autoplay loop muted class="wide-img clickable-video" controls></video>
 
-            <img src="image/work/Rhiza/package.png" alt="main" class="wide-img">
+            <img src="image/work/Rhiza/package.png" alt="package" class="wide-img">
 
-            <img src="image/work/Rhiza/exhibition.png" alt="main" class="wide-img">
+            <img src="image/work/Rhiza/exhibition.png" alt="popup_planning" class="wide-img">
 
     </main>
 
