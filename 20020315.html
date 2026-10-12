@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YUN | 20020315</title>
+
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'cev5tws',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+ 
+    <script>
+          (function(d) {
+            var config = {
+      kitId: 'cev5tws',
+      scriptTimeout: 3000,
+      async: true
+      },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+
+    <style>
+      
+        html {
+          scroll-behavior: smooth;
+      }
+      
+      *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      
+          text-decoration: none;
+      }
+      
+      body {
+          &::-webkit-scrollbar {
+              display: none;
+          }
+          
+          font-family: "ds-endendend", sans-serif;
+          color: #333;
+          background-color: #FCFFFF;
+          overflow-x: hidden;
+      }
+      
+      
+      /* 타이틀 */
+          .title-container {
+              position: relative;
+            
+              box-sizing: border-box;
+              display: flex;
+              align-items: center;
+              flex-direction: row;
+              justify-content: space-between;
+              
+              width: 100%;
+              height: 100%;
+              
+              padding: calc((200 / 1728) * 100vw) calc((100 / 1728) * 100vw) calc((100 / 1728) * 100vw);
+              margin: 100px 0 0 0;
+      
+              overflow: hidden;
+              user-select: none;
+          }   
+      
+                    .project-title { 
+                        font-family: "abhaya-libre", sans-serif;
+                        font-size: clamp(50px, calc((100 / 1728) * 100vw), 100px);
+                        font-weight: 700;
+                        font-style: normal;
+                        line-height: 0.8;
+                        
+                        color: #1A2223;
+                          
+                        margin: 0 0 calc((30 / 1080) * 100vh) 0;
+                    }
+                      
+                    .sub-description {
+                        font-size: clamp(11px, calc((14 / 1728) * 100vw), 14px);   
+                        font-weight: 100;
+                        font-style: normal;
+                        line-height: 2;
+                        color: #1A2223;
+      
+                        text-align: justify;
+                        text-justify: inter-word;
+      
+                        width: calc((857 / 1728) * 100vw);
+                        margin: 0;
+                    }
+      
+              .tag-container {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-end;
+          
+                  gap: calc((120 / 1728) * 100vw);
+              }
+          
+                    .category-item {
+                        text-decoration: none;
+                        
+                        display: grid;
+                        align-items: center;
+                        width: 35%;
+                            
+                        font-family: "abhaya-libre", sans-serif;
+                        font-size: clamp(20px, calc((24 / 1728) * 100vw), 24px);
+                        font-weight: 700;
+                        font-style: normal;
+                        line-height: 0.9;
+                            
+                        color: #566365;
+                    }
+      
+                            .category-item .category-text {
+                                grid-column: 2;
+                                text-align: center;
+                                padding: 0;
+                            }
+                          
+                            .category-item .bracket-left {
+                                grid-column: 1;
+                                text-align: left;
+                            }
+                          
+                            .category-item .bracket-right {
+                                grid-column: 3;
+                                text-align: right;
+                            }
+                
+                   .project-tags {
+                        display: flex;
+                        justify-content: flex-start;
+                        flex-direction: row;
+                                    
+                        gap: calc((20 / 1728) * 100vw);
+                        max-width: 360px;
+                    }
+                        
+                    .project-tags .tag-item {
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                                    
+                        text-decoration: none;
+                                    
+                        font-size: clamp(10px, calc((13 / 1728) * 100vw), 13px);   
+                        font-weight: 400;
+                        font-style: normal;
+                        color: #AAB9BB;
+                        
+                        border: 1.5px solid #AAB9BB;
+                                    
+                        padding: calc((5 / 1728) * 100vw) calc((20 / 1728) * 100vw);
+                        border-radius: 20px;
+                        
+                        background-color: transparent;
+                        white-space: nowrap;
+                    }
+      
+      
+      
+      /* 갤러리 */
+          .application-container {
+              position: relative;
+            
+              box-sizing: border-box;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              
+              width: 100%;
+              height: 100%;
+              
+              padding: 0 calc((100 / 1728) * 100vw);
+              gap: calc((200 / 1728) * 100vw);
+      
+              overflow: hidden;
+              user-select: none;
+          }
+              
+              /* 갤러리 이미지들*/
+                .wide-img {
+                    width: calc((1528 / 1728) * 100vw);
+                    display: block;
+                    
+                    background-color: #FCFFFF;
+                }
+
+                .application-row {
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                }                 
+    
+                    .g1-img {
+                        width: calc((467 / 1728) * 100vw);
+                        height: calc((622 / 1728) * 100vw);
+                      
+                        display: block;
+                        
+                        background-color: #FFFDF2;
+                    }
+                    
+                    .g2-img {
+                        width: calc((1040 / 1728) * 100vw);
+                        height: calc((622 / 1728) * 100vw);
+                        
+                        background-color: #FFFDF2;
+                    }
+
+                    .site-img {
+                        width: calc((684 / 1728) * 100vw);
+                        height: calc((708 / 1728) * 100vw);
+                      
+                        display: block;
+                        
+                        background-color: #FFFDF2;
+                    }
+                    
+                    .me-img {
+                        width: calc((823 / 1728) * 100vw);
+                        height: calc((708 / 1728) * 100vw);
+                        
+                        background-color: #FFFDF2;
+                    }
+  </style>
+</head>
+
+
+    
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <div class="title-container"> 
+
+        <div class="content-box">
+            <h1 class="project-title">20020315</h3>
+            <p class="sub-description">
+                Inspired by Ryuichi Sakamoto’s album 12, this is a graduation project that explores an intimate dialogue with my own existence. Named after my birth date, the work captures a reflective process of self-discovery and is dedicated to anyone questioning and seeking their true sense of self.</p>
+        </div>
+        
+        <div class="tag-container">
+            <div class="category-item">
+                        <span class="bracket-left">{</span>
+                        <span class="category-text">Digital</span>
+                        <span class="bracket-right">}</span>
+            </div>
+
+            <div class="project-tags">
+                         <span class="tag-item">Interactive</span>
+                         <span class="tag-item">TouchDesigner</span>
+                         <span class="tag-item">Installation</span>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <main class="application-container">
+        
+            <video src="image/work/20020315.mp4" autoplay loop muted alt="logo" class="wide-img"></video>
+
+            <img src="image/work/20020315/sketch.png" alt="main" class="wide-img">
+
+            <video src="image/work/20020315/test.mp4" autoplay loop muted alt="logo" class="wide-img"></video>
+
+            <section id="application-row1" class="application-row">
+                <img src="image/work/20020315/goods 1.png" alt="good" class="g1-img">
+                <img src="image/work/20020315/goods2.png" alt="good" class="g2-img">
+            </section>
+
+            <video src="image/work/20020315/color.mp4" autoplay loop muted alt="logo" class="wide-img"></video>
+
+            <section id="application-row2" class="application-row">
+                <img src="image/work/20020315/site.png" alt="site" class="site-img">
+                <img src="image/work/20020315/me.png" alt="me" class="me-img">
+            </section>
+
+            <img src="image/work/20020315/exhibition.png" alt="main" class="wide-img">
+
+    </main>
+
+</body>
+
+<div id="footer-placeholder"></div>
+
+<script>
+    fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-placeholder').innerHTML = data;
+            initHeaderScroll();
+        });
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        });
+</script>
+
+    
+</html>
+    
