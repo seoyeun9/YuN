@@ -1,6 +1,53 @@
 <header class="header">
  
-  <link rel="stylesheet" href="headerstyle.css">
+  <style>
+    .header {
+       position: fixed;
+       
+       width: 100vw;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 60px 60px;
+       box-sizing: border-box;
+       z-index: 10;
+     }
+
+    .logo-top a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        }
+
+    .logo-top img {
+        display: block;
+        height: 35px;
+        width: auto;
+        }
+
+    .nav-menu {
+        display: flex;
+        gap: 60px;
+        flex-shrink: 0;
+        }
+
+    .nav-item {
+        text-decoration: none;
+        color: #1A2223;
+        
+        font-family: "abhaya-libre", sans-serif;
+        font-weight: 700;
+        font-style: normal;    
+        font-size: 20px;
+        
+        transition: opacity 0.3s ease;
+        }
+
+    .nav-item:hover {
+        opacity: 0.5;
+        }
+   </style>
+
   
     <div class="logo-top">
       <a href="home.html">
