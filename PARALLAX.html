@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YUN | PARALLAX</title>
+
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'cev5tws',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+ 
+    <script>
+          (function(d) {
+            var config = {
+      kitId: 'cev5tws',
+      scriptTimeout: 3000,
+      async: true
+      },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+
+    <style>
+      
+        html {
+          scroll-behavior: smooth;
+      }
+      
+      *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      
+          text-decoration: none;
+      }
+      
+      body {
+          &::-webkit-scrollbar {
+              display: none;
+          }
+          
+          font-family: "ds-endendend", sans-serif;
+          color: #333;
+          background-color: #FCFFFF;
+          overflow-x: hidden;
+      }
+      
+      
+      /* 타이틀 */
+          .title-container {
+              position: relative;
+            
+              box-sizing: border-box;
+              display: flex;
+              align-items: center;
+              flex-direction: row;
+              justify-content: space-between;
+              
+              width: 100%;
+              height: 100%;
+              
+              padding: calc((100 / 1728) * 100vw);
+              margin: 100px 0 0 0;
+      
+              overflow: hidden;
+              user-select: none;
+          }   
+      
+                    .project-title { 
+                        font-family: "abhaya-libre", sans-serif;
+                        font-size: clamp(50px, calc((100 / 1728) * 100vw), 100px);
+                        font-weight: 700;
+                        font-style: normal;
+                        line-height: 0.8;
+                        
+                        color: #1A2223;
+                          
+                        margin: 0 0 calc((30 / 1080) * 100vh) 0;
+                    }
+                      
+                    .sub-description {
+                        font-size: clamp(11px, calc((14 / 1728) * 100vw), 14px);   
+                        font-weight: 100;
+                        font-style: normal;
+                        line-height: 2;
+                        color: #1A2223;
+      
+                        text-align: justify;
+                        text-justify: inter-word;
+      
+                        width: calc((857 / 1728) * 100vw);
+                        margin: 0;
+                    }
+      
+              .tag-container {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-end;
+          
+                  gap: calc((120 / 1728) * 100vw);
+              }
+          
+                    .category-item {
+                        text-decoration: none;
+                        
+                        display: grid;
+                        align-items: center;
+                        width: 35%;
+                            
+                        font-family: "abhaya-libre", sans-serif;
+                        font-size: clamp(20px, calc((24 / 1728) * 100vw), 24px);
+                        font-weight: 700;
+                        font-style: normal;
+                        line-height: 0.9;
+                            
+                        color: #566365;
+                    }
+      
+                            .category-item .category-text {
+                                grid-column: 2;
+                                text-align: center;
+                                padding: 0;
+                            }
+                          
+                            .category-item .bracket-left {
+                                grid-column: 1;
+                                text-align: left;
+                            }
+                          
+                            .category-item .bracket-right {
+                                grid-column: 3;
+                                text-align: right;
+                            }
+                
+                   .project-tags {
+                        display: flex;
+                        justify-content: flex-start;
+                        flex-direction: row;
+                                    
+                        gap: calc((20 / 1728) * 100vw);
+                        max-width: 360px;
+                    }
+                        
+                    .project-tags .tag-item {
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                                    
+                        text-decoration: none;
+                                    
+                        font-size: clamp(10px, calc((13 / 1728) * 100vw), 13px);   
+                        font-weight: 400;
+                        font-style: normal;
+                        color: #AAB9BB;
+                        
+                        border: 1.5px solid #AAB9BB;
+                                    
+                        padding: calc((5 / 1728) * 100vw) calc((20 / 1728) * 100vw);
+                        border-radius: 20px;
+                        
+                        background-color: transparent;
+                        white-space: nowrap;
+                    }
+      
+      
+      
+      /* 갤러리 */
+          .application-container {
+              position: relative;
+            
+              box-sizing: border-box;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              
+              width: 100%;
+              height: 100%;
+              
+              padding: 0 calc((100 / 1728) * 100vw);
+              gap: calc((200 / 1728) * 100vw);
+      
+              overflow: hidden;
+              user-select: none;
+          }
+              
+              /* 갤러리 이미지들*/
+                .wide-img {
+                    width: calc((1528 / 1728) * 100vw);
+                    display: block;
+                    
+                    background-color: #FCFFFF;
+                }
+
+                .clickable-video::-webkit-media-controls {
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                }
+                
+                .clickable-video:hover::-webkit-media-controls {
+                    opacity: 1;
+                }
+        
+                .application-row {
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                }                 
+    
+                    .bp {
+                        width: calc((311 / 1728) * 100vw);
+                        height: calc((890 / 1728) * 100vw);
+                        
+                        display: block;
+                        
+                        background-color: #FFFDF2;
+                    }
+                    
+                    .color {
+                        width: calc((1210 / 1728) * 100vw);
+                        height: calc((890 / 1728) * 100vw);
+                        
+                        display: block;
+                        
+                        background-color: #FFFDF2;
+                    }                
+  </style>
+</head>
+
+
+    
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <div class="title-container"> 
+
+        <div class="content-box">
+            <h1 class="project-title">PARAALX</h3>
+            <p class="sub-description">
+                PARALLAX is a board game brand concept inspired by the idea of “putting oneself in another’s shoes”. By having players swap personalities to navigate various scenarios, it transforms the natural discomfort of getting closer into a playful, interactive experience.</p>
+        </div>
+        
+        <div class="tag-container">
+            <div class="category-item">
+                        <span class="bracket-left">{</span>
+                        <span class="category-text">Digital</span>
+                        <span class="bracket-right">}</span>
+            </div>
+
+            <div class="project-tags">
+                         <span class="tag-item">Strategy</span>
+                         <span class="tag-item">Experience</span>
+                         <span class="tag-item">Identity</span>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <main class="application-container">
+        
+            <img src="image/work/PARALLAX/board1.png" alt="package" class="wide-img">
+
+            <video src="image/work/PARALLAX/logo.mp4" autoplay loop muted alt="logo" class="wide-img"></video>
+
+            <img src="image/work/PARALLAX/board2.png" alt="package" class="wide-img">
+      
+            <section id="application-row" class="application-row">
+                <img src="image/work/PARALLAX/principle.png" alt="brand_principle" class="bp">
+                <video src="image/work/PARALLAX/color.mp4" autoplay loop muted alt="color" class="color"></video>
+            </section>
+
+            <img src="image/work/PARALLAX/outside.png" alt="outside promotion" class="wide-img">
+
+            <img src="image/work/PARALLAX/app1.png" alt="ordering" class="wide-img">
+
+            <img src="image/work/PARALLAX/ug.png" alt="underground promotion" class="wide-img">
+
+            <img src="image/work/PARALLAX/board3.png" alt="outside promotion" class="wide-img">
+            
+            <img src="image/work/PARALLAX/app2.png" alt="outside promotion" class="wide-img">
+
+            <img src="image/work/PARALLAX/board4.png" alt="outside promotion" class="wide-img">
+    </main>
+
+</body>
+
+<div id="footer-placeholder"></div>
+
+<script>
+    fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-placeholder').innerHTML = data;
+            initHeaderScroll();
+        });
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        });
+</script>
+
+    
+</html>
+    
